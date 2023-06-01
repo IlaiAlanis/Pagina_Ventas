@@ -23,19 +23,19 @@ namespace Pagina_Ventas.Models.dbModels
         [Unicode(false)]
         public string ApellidoUsuario { get; set; } = null!;
         [Column("userfecha_nac_usuario", TypeName = "date")]
-        public DateTime UserfechaNacUsuario { get; set; }
+        public DateTime? UserfechaNacUsuario { get; set; }
         [Column("dir_usuario")]
         [StringLength(80)]
         [Unicode(false)]
         public string DirUsuario { get; set; } = null!;
-        [Column("num_ext_usuario")]
-        public int NumExtUsuario { get; set; }
+        [Column("cp_usuario")]
+        public int CpUsuario { get; set; }
         [Column("id_est_usuario")]
-        public int IdEstUsuario { get; set; }
+        public int? IdEstUsuario { get; set; }
         [Column("id_mun_usuario")]
-        public int IdMunUsuario { get; set; }
+        public int? IdMunUsuario { get; set; }
         [Column("id_cargo")]
-        public int IdCargo { get; set; }
+        public int? IdCargo { get; set; }
         [ForeignKey("IdCargo")]
         [InverseProperty("ApplicationUser")]
         public virtual Cargo IdCargoNavigation { get; set; } = null!;

@@ -177,12 +177,12 @@ namespace Pagina_Ventas.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nombre_usuario = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
                     apellido_usuario = table.Column<string>(type: "varchar(60)", unicode: false, maxLength: 60, nullable: false),
-                    userfecha_nac_usuario = table.Column<DateTime>(type: "date", nullable: false),
+                    userfecha_nac_usuario = table.Column<DateTime>(type: "date", nullable: true),
                     dir_usuario = table.Column<string>(type: "varchar(80)", unicode: false, maxLength: 80, nullable: false),
-                    num_ext_usuario = table.Column<int>(type: "int", nullable: false),
-                    id_est_usuario = table.Column<int>(type: "int", nullable: false),
-                    id_mun_usuario = table.Column<int>(type: "int", nullable: false),
-                    id_cargo = table.Column<int>(type: "int", nullable: false),
+                    cp_usuario = table.Column<int>(type: "int", nullable: false),
+                    id_est_usuario = table.Column<int>(type: "int", nullable: true),
+                    id_mun_usuario = table.Column<int>(type: "int", nullable: true),
+                    id_cargo = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -205,20 +205,17 @@ namespace Pagina_Ventas.Migrations
                         name: "FK_AspNetUsers_Cargo_id_cargo",
                         column: x => x.id_cargo,
                         principalTable: "Cargo",
-                        principalColumn: "id_cargo",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "id_cargo");
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Estado_id_est_usuario",
                         column: x => x.id_est_usuario,
                         principalTable: "Estado",
-                        principalColumn: "id_estado",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "id_estado");
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Municipio_id_mun_usuario",
                         column: x => x.id_mun_usuario,
                         principalTable: "Municipio",
-                        principalColumn: "id_municipio",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "id_municipio");
                 });
 
             migrationBuilder.CreateTable(

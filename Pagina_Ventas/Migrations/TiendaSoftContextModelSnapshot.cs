@@ -177,6 +177,10 @@ namespace Pagina_Ventas.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("CpUsuario")
+                        .HasColumnType("int")
+                        .HasColumnName("cp_usuario");
+
                     b.Property<string>("DirUsuario")
                         .IsRequired()
                         .HasMaxLength(80)
@@ -191,15 +195,15 @@ namespace Pagina_Ventas.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<int>("IdCargo")
+                    b.Property<int?>("IdCargo")
                         .HasColumnType("int")
                         .HasColumnName("id_cargo");
 
-                    b.Property<int>("IdEstUsuario")
+                    b.Property<int?>("IdEstUsuario")
                         .HasColumnType("int")
                         .HasColumnName("id_est_usuario");
 
-                    b.Property<int>("IdMunUsuario")
+                    b.Property<int?>("IdMunUsuario")
                         .HasColumnType("int")
                         .HasColumnName("id_mun_usuario");
 
@@ -224,10 +228,6 @@ namespace Pagina_Ventas.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<int>("NumExtUsuario")
-                        .HasColumnType("int")
-                        .HasColumnName("num_ext_usuario");
-
                     b.Property<string>("PasswordHash")
                         .HasColumnType("nvarchar(max)");
 
@@ -247,7 +247,7 @@ namespace Pagina_Ventas.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<DateTime>("UserfechaNacUsuario")
+                    b.Property<DateTime?>("UserfechaNacUsuario")
                         .HasColumnType("date")
                         .HasColumnName("userfecha_nac_usuario");
 
@@ -631,21 +631,15 @@ namespace Pagina_Ventas.Migrations
                 {
                     b.HasOne("Pagina_Ventas.Models.dbModels.Cargo", "IdCargoNavigation")
                         .WithMany("ApplicationUser")
-                        .HasForeignKey("IdCargo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IdCargo");
 
                     b.HasOne("Pagina_Ventas.Models.dbModels.Estado", "IdEstUsuarioNavigation")
                         .WithMany("ApplicationUser")
-                        .HasForeignKey("IdEstUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IdEstUsuario");
 
                     b.HasOne("Pagina_Ventas.Models.dbModels.Municipio", "IdMunUsuarioNavigation")
                         .WithMany("ApplicationUser")
-                        .HasForeignKey("IdMunUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IdMunUsuario");
 
                     b.Navigation("IdCargoNavigation");
 

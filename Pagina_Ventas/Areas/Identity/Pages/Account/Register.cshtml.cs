@@ -77,21 +77,27 @@ namespace Pagina_Ventas.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-
-
+            [Required]
+            [StringLength(60, ErrorMessage = "El nombre debe ser de maximo 60 caracteres", MinimumLength = 4)]
+            [Display(Name = "Nombres")]
+            public string NombreUsuario { get; set; }
 
             [Required]
-            [StringLength(60, ErrorMessage = "La direccion debe ser de maximo 60 caracteres", MinimumLength = 6)]
+            [StringLength(60, ErrorMessage = "La direccion debe ser de maximo 60 caracteres", MinimumLength = 4)]
             [Display(Name = "Apellidos")]
             public string ApellidoUsuario { get; set; }
 
             [Required]
-            [Display(Name = "Fecha de nacimiento")]
-            public DateTime UserfechaNacUsuario { get; set; }
+            [StringLength(60, ErrorMessage = "La direccion debe ser de maximo 80 caracteres", MinimumLength = 4)]
+            [Display(Name = "Direccion")]
+            public string DirUsuario { get; set; }
+            [Required]
+            [Display(Name = "Codigo Postal")]
+            public string CpUsuario { get; set; }
 
             [Required]
             [Display(Name = "Nombre de usuario")]
-            public DateTime UserName { get; set; }
+            public string UserName { get; set; }
 
 
             /// <summary>
@@ -128,7 +134,10 @@ namespace Pagina_Ventas.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
-
+                user.NombreUsuario = Input.NombreUsuario;
+                user.ApellidoUsuario = Input.ApellidoUsuario;
+                user.UserName = Input.UserName;
+                user.DirUsuario = Input.DirUsuario;
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
