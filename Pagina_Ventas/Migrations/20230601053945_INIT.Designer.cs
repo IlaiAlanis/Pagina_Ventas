@@ -12,7 +12,7 @@ using Pagina_Ventas.Models.dbModels;
 namespace Pagina_Ventas.Migrations
 {
     [DbContext(typeof(TiendaSoftContext))]
-    [Migration("20230601044709_INIT")]
+    [Migration("20230601053945_INIT")]
     partial class INIT
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
