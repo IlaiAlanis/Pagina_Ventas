@@ -14,7 +14,10 @@ namespace Pagina_Ventas.Models.dbModels
             Venta = new HashSet<Ventum>();
         }
 
-        
+        [Column("nombre_usuario")]
+        [StringLength(100)]
+        [Unicode(false)]
+        public string NombreUsuario { get; set; } = null!;
         [Column("apellido_usuario")]
         [StringLength(60)]
         [Unicode(false)]
