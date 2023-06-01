@@ -14,7 +14,10 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddIdentity<ApplicationUser, IdentityRole<int>>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<TiendaSoftContext>()
     .AddDefaultTokenProviders();
+/*Esto es para decirle que el proyecto va a manejarse por el modelo mvc*/
 builder.Services.AddControllersWithViews();
+/*Este es otro modelo de programar que ocupa areas es como mvc*/
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
