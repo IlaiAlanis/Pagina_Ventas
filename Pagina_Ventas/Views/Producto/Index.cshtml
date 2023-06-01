@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Pagina_Ventas.Models.dbModels.Producto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CostoProd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExistenciaProd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescuentoProd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioProd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescripcionProd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoProdNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCatProdNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MarcaProdNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CostoProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExistenciaProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescuentoProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescripcionProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoProdNavigation.IdEstado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCatProdNavigation.IdCat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarcaProdNavigation.IdMarca)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProd">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProd">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProd">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

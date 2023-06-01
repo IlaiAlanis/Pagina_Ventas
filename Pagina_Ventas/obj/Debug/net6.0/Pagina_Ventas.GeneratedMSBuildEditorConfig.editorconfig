@@ -176,6 +176,46 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Carrito/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Carrito/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Carrito/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Carrito/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Carrito/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycml0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/DetalleVp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZwXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/DetalleVp/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZwXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/DetalleVp/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZwXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/DetalleVp/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZwXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/DetalleVp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWxsZVZwXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Home/Administrador.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbmlzdHJhZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -200,6 +240,66 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc3VhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/MarcaProducto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FQcm9kdWN0b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/MarcaProducto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FQcm9kdWN0b1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/MarcaProducto/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FQcm9kdWN0b1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/MarcaProducto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FQcm9kdWN0b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/MarcaProducto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FQcm9kdWN0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Pago/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Pago/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Pago/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Pago/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Pago/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Producto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Producto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Producto/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Producto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Producto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -210,6 +310,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Ventum/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Ventum/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Ventum/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Ventum/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/Ventum/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Gris/Documents/Proyecto_PROWEB/Pagina_Ventas/Pagina_Ventas/Views/_ViewImports.cshtml]
