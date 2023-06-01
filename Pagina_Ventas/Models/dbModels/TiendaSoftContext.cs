@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Pagina_Ventas.Models.dbModels
-{
-    public partial class TiendaSoftContext : DbContext
+{ /*Se hereda de identityDBContext*/
+    public partial class TiendaSoftContext : IdentityDbContext<ApplicationUser, IdentityRole<int>, int>
     {
         public TiendaSoftContext()
         {
@@ -16,7 +18,6 @@ namespace Pagina_Ventas.Models.dbModels
         {
         }
 
-        public virtual DbSet<Cargo> Cargos { get; set; } = null!;
         public virtual DbSet<Carrito> Carritos { get; set; } = null!;
         public virtual DbSet<CategoriaProducto> CategoriaProductos { get; set; } = null!;
         public virtual DbSet<DetalleVp> DetalleVps { get; set; } = null!;
@@ -25,7 +26,6 @@ namespace Pagina_Ventas.Models.dbModels
         public virtual DbSet<Municipio> Municipios { get; set; } = null!;
         public virtual DbSet<Pago> Pagos { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
-        public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
         public virtual DbSet<Ventum> Venta { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -36,14 +36,10 @@ namespace Pagina_Ventas.Models.dbModels
                 optionsBuilder.UseSqlServer("Server=.;Database=TiendaSoft;Trusted_Connection=True;");
             }
         }
-
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Cargo>(entity =>
-            {
-                entity.HasKey(e => e.IdCargo)
-                    .HasName("PK__Cargo__D3C09EC5B0CFDB4B");
-            });
+            base.OnModelCreating(modelBuilder);         
 
             modelBuilder.Entity<Carrito>(entity =>
             {
@@ -141,30 +137,7 @@ namespace Pagina_Ventas.Models.dbModels
                     .HasConstraintName("fk_MarProd");
             });
 
-            modelBuilder.Entity<Usuario>(entity =>
-            {
-                entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuario__4E3E04AD5F1AE55E");
-
-                entity.HasOne(d => d.IdCargoNavigation)
-                    .WithMany(p => p.Usuarios)
-                    .HasForeignKey(d => d.IdCargo)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_CargUs");
-
-                entity.HasOne(d => d.IdEstUsuarioNavigation)
-                    .WithMany(p => p.Usuarios)
-                    .HasForeignKey(d => d.IdEstUsuario)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_EstUs");
-
-                entity.HasOne(d => d.IdMunUsuarioNavigation)
-                    .WithMany(p => p.Usuarios)
-                    .HasForeignKey(d => d.IdMunUsuario)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_MunUs");
-            });
-
+            
             modelBuilder.Entity<Ventum>(entity =>
             {
                 entity.HasKey(e => e.IdVenta)

@@ -11,7 +11,7 @@ namespace Pagina_Ventas.Models.dbModels
     {
         public Cargo()
         {
-            Usuarios = new HashSet<Usuario>();
+            ApplicationUser = new HashSet<ApplicationUser>();
         }
 
         [Key]
@@ -29,6 +29,6 @@ namespace Pagina_Ventas.Models.dbModels
         public int SalarioCargo { get; set; }
 
         [InverseProperty("IdCargoNavigation")]
-        public virtual ICollection<Usuario> Usuarios { get; set; }
+        public virtual ICollection<ApplicationUser> ApplicationUser { get; set; }
     }
 }

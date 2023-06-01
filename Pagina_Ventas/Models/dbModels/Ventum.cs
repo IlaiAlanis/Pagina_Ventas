@@ -30,7 +30,7 @@ namespace Pagina_Ventas.Models.dbModels
         public virtual Pago IdPagosNavigation { get; set; } = null!;
         [ForeignKey("IdUsuarioVenta")]
         [InverseProperty("Venta")]
-        public virtual Usuario IdUsuarioVentaNavigation { get; set; } = null!;
+        public virtual ApplicationUser IdUsuarioVentaNavigation { get; set; } = null!;
         [InverseProperty("IdVentaDvpNavigation")]
         public virtual ICollection<DetalleVp> DetalleVps { get; set; }
     }

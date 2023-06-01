@@ -13,7 +13,7 @@ namespace Pagina_Ventas.Models.dbModels
         {
             Municipios = new HashSet<Municipio>();
             Productos = new HashSet<Producto>();
-            Usuarios = new HashSet<Usuario>();
+            ApplicationUser = new HashSet<ApplicationUser>();
         }
 
         [Key]
@@ -29,6 +29,6 @@ namespace Pagina_Ventas.Models.dbModels
         [InverseProperty("EstadoProdNavigation")]
         public virtual ICollection<Producto> Productos { get; set; }
         [InverseProperty("IdEstUsuarioNavigation")]
-        public virtual ICollection<Usuario> Usuarios { get; set; }
+        public virtual ICollection<ApplicationUser> ApplicationUser { get; set; }
     }
 }
